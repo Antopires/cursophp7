@@ -48,11 +48,18 @@ require_once("config.php");
 
 
 //Fazendo um updadte no banco de dados
+//$usuario = new Usuario();
+//$usuario->loadById(6);
+//$usuario->update("professor", "pro123");
+//echo $usuario;
+
+
+//Fazendo um updadte no banco de dados
 
 $usuario = new Usuario();
 
-$usuario->loadById(6);
+$usuario->loadById(5);
 
-$usuario->update("professor", "pro123");
+$usuario->delete();
 
 echo $usuario;
